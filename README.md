@@ -1,2 +1,2 @@
-React native | test
+React native | first-app
 # react-native
