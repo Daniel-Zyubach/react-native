@@ -1,12 +1,13 @@
-import { View, Text } from "react-native"
-import styles from "../styles/style"
+import { View } from "react-native"
 
-const Home = () => {
+import Post from "../components/Post"
+
+const App = () => {
   return (
     <View>
-      <Text style={styles.bigText}>Hello, world!</Text>
+      <Post />
     </View>
   )
 }
 
-export default Home
+export default App
