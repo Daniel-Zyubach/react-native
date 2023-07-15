@@ -26,14 +26,14 @@ const PostDate = styled.Text`
   color: rgba(0, 0, 0, 0.4);
   margin-top: 2px;
 `
-
-const Post = () => {
+//создание функционального компонента и передача в параметры пропсов
+const Post = ({ title, imageUrl, createdAt }) => {
   return (
     <PostView>
-      <PostImage source={{ uri: 'https://f.simpleminecraft.ru/uploads/monthly_2019_04/image.png.554f935594b690973e886d83182b2de6.png' }} />
+      <PostImage source={{ uri: imageUrl }} />
       <PostDetails>
-        <PostTitle>Тестовая статья</PostTitle>
-        <PostDate>11/22/33</PostDate>
+        <PostTitle>{title}</PostTitle>
+        <PostDate>{createdAt}</PostDate>
       </PostDetails>
     </PostView>
   )
